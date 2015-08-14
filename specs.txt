@@ -3,31 +3,31 @@ Count Repeats
 1. count_repeats_none
 
     Behavior: Will take a string containing a single word and search for a different word, returning zero.
-    Input = String: "Hello" Search: "Zimbabwe"
+    Input = String: "Hello" Search keyword: "Zimbabwe"
     Output = 0
 
 2. count_repeats_one
 
     Behavior: Will take a string containing a single word and search for that one word, returning 1.
-    Input = String: "Hello" Search: "Hello"
+    Input = String: "Hello" Search keyword: "Hello"
     Output = 1
 
 3. count_repeats_two
 
     Behavior: Will take a string containing the same word twice and search for that word, returning 2.
-    Input = String: "Hello Hello" Search: "Hello"
+    Input = String: "Hello Hello" Search keyword: "Hello"
     Output = 2
 
 4. count_repeats_sentence
 
     Behavior: Will take a string containing a short sentence and search for a word that appears twice within that sentence, returning 2.
-    Input = String: "Round the rugged rock, the ragged rascal ran" Search: "the"
+    Input = String: "Round the rugged rock, the ragged rascal ran" Search keyword: "the"
     Output = 2
 
 5. count_repeats_mixedCase
 
     Behavior: Will take a string containing a short sentence with mixed case letters, and search for a word that appears twice within that sentence, returning 2.
-    Input = String: "Nice tUXedo, nice TuXeDo to DIE in!" Search: "tuxedo"
+    Input = String: "Nice tUXedo, nice TuXeDo to DIE in!" Search keyword: "tuxedo"
     Output = 2
 
 6. count_repeats_fullMatches
