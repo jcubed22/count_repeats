@@ -24,7 +24,7 @@ Count Repeats
     Input = String: "Round the rugged rock, the ragged rascal ran" Search: "the"
     Output = 2
 
-5. count_repeats_upperCase
+5. count_repeats_mixedCase
 
     Behavior: Will take a string containing a short sentence with mixed case letters, and search for a word that appears twice within that sentence, returning 2.
     Input = String: "Nice tUXedo, nice TuXeDo to DIE in!" Search: "tuxedo"
