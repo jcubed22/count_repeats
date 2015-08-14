@@ -1,8 +1,12 @@
 <html>
     <head>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../css/styles.css" type="text" media="all">
         <title>Repeat Counter</title>
+        <style>
+            #result {
+                text-indent: 2em;
+            }
+        </style>
     </head>
     <body>
         <div class="container">
@@ -10,13 +14,13 @@
             <hr>
             <p class="lead">
                 The word <b>{{ keyword }}</b> appears in the string <b>"{{ string }}":</b>
-                <br>
-                <br>
-                <div id="result"><b>{{ repeats }}</b> time(s).</div>
-                <br>
-                <br>
-                <a href="/">Search another string</a>
             </p>
+                <br>
+                <br>
+                <div class="lead" id="result"><b>{{ repeats }}</b> time(s).</div>
+                <br>
+                <br>
+                <p class="lead"><a href="/">Search another string</a></p>
         </div>
     </body>
 </html>
