@@ -45,5 +45,19 @@
             //Assert
             $this->assertEquals(2, $result);
         }
+
+        function test_count_repeats_sentence()
+        {
+            //Arrange
+            $test_countRepeats = new RepeatCounter;
+            $keyword = "the";
+            $string = "Round the rugged rock, the ragged rascal ran";
+
+            //Act
+            $result = $test_countRepeats->countRepeats($string, $keyword);
+
+            //Assert
+            $this->assertEquals(2, $result);
+        }
     }
 ?>
