@@ -17,5 +17,20 @@
             //Assert
             $this->assertEquals(0, $result);
         }
+
+        function test_count_repeats_one()
+        {
+            //Arrange
+            $test_countRepeats = new RepeatCounter;
+            $keyword = "Hello";
+            $string = "Hello";
+
+            //Act
+            $result = $test_countRepeats->countRepeats($string, $keyword);
+
+            //Assert
+            $this->assertEquals(1, $result);
+        }
+
     }
 ?>
