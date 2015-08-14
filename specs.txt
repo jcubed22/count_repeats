@@ -29,3 +29,9 @@ Count Repeats
     Behavior: Will take a string containing a short sentence with mixed case letters, and search for a word that appears twice within that sentence, returning 2.
     Input = String: "Nice tUXedo, nice TuXeDo to DIE in!" Search: "tuxedo"
     Output = 2
+
+6. count_repeats_fullMatches
+
+    Behavior: Will take a string containing a short sentence and search for a keyword that partially matches words within that string, but will only return full matches.
+    Input = String: "Hello hello hello hello hello hell" Search keyword: "hell"
+    Output = 1
