@@ -13,8 +13,10 @@
 
     $app->get('/search_form', function() use ($app) {
         $my_RepeatCounter = new RepeatCounter;
+        $keyword = $_GET['keyword'];
+        $string = $_GET['search_string'];
         $repeat_count = $my_RepeatCounter->countRepeats($_GET['search_string'], $_GET['keyword']);
-        return $app['twig']->render('results.html.twig', array('repeats' => $repeat_count));
+        return $app['twig']->render('results.html.twig', array('repeats' => $repeat_count, 'keyword' => $keyword, 'string' => $string));
     });
 
     return $app;
