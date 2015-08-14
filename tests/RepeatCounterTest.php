@@ -59,5 +59,19 @@
             //Assert
             $this->assertEquals(2, $result);
         }
+
+        function test_count_repeats_mixedCase()
+        {
+            //Arrange
+            $test_countRepeats = new RepeatCounter;
+            $keyword = "tuxedo";
+            $string = "Nice tUXedo, nice TuXeDo to DIE in!";
+
+            //Act
+            $result = $test_countRepeats->countRepeats($string, $keyword);
+
+            //Assert
+            $this->assertEquals(2, $result);
+        }
     }
 ?>
